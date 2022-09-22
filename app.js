@@ -97,6 +97,9 @@ function addQuiz(obj, number_Of_Answers, quiz_Count) {
     // Create H2 Question Title
     let questionTitle = document.createElement("h2");
 
+    // Text Align:center For questionTitle
+    questionTitle.style.textAlign = "center";
+    
     // Create H2 Question Text
     questionTitle.appendChild(document.createTextNode(obj.title));
 
