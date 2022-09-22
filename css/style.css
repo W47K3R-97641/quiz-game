@@ -3,7 +3,7 @@
 }
 
 :root {
-  --main-Color: #673ab7;
+  --main-Color: #4caf50;
   --seconde-Color: black;
   --text-Color: white;
 }
@@ -33,6 +33,10 @@ body {
 .quiz-app {
   padding: 20px;
   letter-spacing: 1.5px;
+}
+
+.quiz-area {
+  padding: 18px;
 }
 
 .quiz-app .result {
