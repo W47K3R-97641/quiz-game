@@ -35,10 +35,6 @@ body {
   letter-spacing: 1.5px;
 }
 
-.quiz-app .quiz-area > h3 {
-  display: flex;
-}
-
 .quiz-app .result {
   text-align: center;
 }
