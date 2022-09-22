@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-Color: #673ab7;
+  --seconde-Color: black;
+  --text-Color: white;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-Color);
+  background-color: var(--seconde-Color);
+}
+
+.quiz-app {
+  margin: 20px auto;
+  width: 800px;
+  background-color: var(--seconde-Color);
+  padding: 15px;
+}
+.quiz-app .quiz-info {
+  display: flex;
+  background-color: var(--main-Color);
+  padding: 20px;
+  justify-content: space-between;
+  color: var(--text-Color);
+  font-weight: bold;
+}
+
+.quiz-app {
+  padding: 20px;
+  letter-spacing: 1.5px;
+}
+
+.quiz-app .result {
+  text-align: center;
+}
+
+.quiz-app .result .right-count {
+  color: blue;
+}
+
+.quiz-app .result .count-Quiz {
+  color: green;
+}
+
+.quiz-app .answers-area {
+  padding: 0 20px 20px;
+}
+.quiz-app .answers-area .answer {
+  padding: 20px;
+  background-color: rgba(49, 50, 50, 0.267);
+}
+.quiz-app .answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #683ab78a;
+}
+
+.quiz-app .answers-area .answer input {
+  accent-color: var(--main-Color);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.quiz-app .answers-area .answer input:checked + label {
+  color: var(--main-Color);
+}
+
+.quiz-app .answers-area .answer label {
+  cursor: pointer;
+  color: rgb(205, 205, 205);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.quiz-app .submit-btn {
+  display: block;
+  width: 100%;
+  background-color: var(--main-Color);
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: auto auto 20px;
+}
+
+.quiz-app .submit-btn:focus {
+  outline: none;
+}
+
+.quiz-app .bullets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quiz-app .bullets .spans {
+  display: flex;
+  gap: 5px;
+}
+
+.quiz-app .bullets .spans span {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--main-Color);
+  border-radius: 50%;
+}
+.quiz-app .bullets .spans .on {
+  background-color: var(--main-Color);
+}
+
+.quiz-app .bullets .count-time {
+  width: fit-content;
+  background-color: var(--main-Color);
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
